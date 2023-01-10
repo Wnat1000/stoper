@@ -1,0 +1,27 @@
+<MainWidget>:
+    lbl:lbl
+	BoxLayout:
+		orientation: 'vertical'
+		Button:
+			text: 'start'
+			on_press: root.start()
+		Button:
+			text: 'stop'
+			on_press: root.stop()
+		Button:
+			text: 'Reset'
+			on_press: root.reset()
+		Button:
+		    text: 'Okrazenie'
+		    on_press: root.okrazenie()
+    BoxLayout:
+        orientation: 'vertical'
+	    Label:
+		    text: str(round(root.number))
+		    text_size: self.size
+		    halign: 'center'
+	    Label:
+	        id: lbl
+	        text: ''
+	        text_size: self.size
+		    halign: 'center'
